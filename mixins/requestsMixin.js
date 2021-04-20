@@ -4,11 +4,11 @@ export const requestsMixin = {
   methods: {  
     getHeadlines(country) {  
       return axios.get(  
-        `${APIURL}/top-headlines?country=${country}&apiKey=${process.env.VUE_APP_APIKEY}`  
+        `${APIURL}/top-headlines?country=${country}&apiKey=${process.env.API_KEY}`  
       );  
     }, getEverything(keyword) {  
       return axios.get(  
-        `${APIURL}/everything?q=${keyword}&apiKey=${process.env.VUE_APP_APIKEY}`  
+        `${APIURL}/everything?q=${keyword}&apiKey=${process.env.API_KEY}`  
       );  
     }  
   }  
