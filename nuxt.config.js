@@ -35,7 +35,7 @@ export default {
         src:  
           "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"  
       }  
-    ]  
+    ]
   },  
   /*  
    ** Customize the progress-bar color  
@@ -96,5 +96,9 @@ export default {
     routes() {  
       return getData().map(d => `headlines/${d.code}`);  
     }  
-  }  
+  },
+  serverMiddleware: [
+  // API middleware
+  '~/server/index.js'
+  ]
 };

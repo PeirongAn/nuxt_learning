@@ -27,7 +27,7 @@ export default {
   },  
   methods: {  
     async getHeadlinesByCountry() {  
-      const { data } = await this.getHeadlines("us");  
+      const { data } = await this.getHeadlines("CN");  
       this.headlines = data.articles;  
     }  
   }  
